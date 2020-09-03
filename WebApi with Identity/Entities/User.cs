@@ -19,5 +19,28 @@ namespace WebApi_with_Identity.Entities
         public byte[] PassWordHash { get; set; }
         [Required]
         public byte[] PassWordSalt { get; set; }
+
+
+        public void CreatePasswordHash(string password)
+        {
+           using(var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                PassWordSalt = hmac.Key;
+                PassWordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
+        }
+        public bool VerifyPasswordHash(string password)
+        {
+            using (var hmac = new System.Security.Cryptography.HMACSHA512(PassWordSalt))
+            {
+                var computedhash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                for (int i = 0; i <computedhash.Length; i++)
+                {
+                    if (computedhash[i] != PassWordHash[i])
+                        return false;
+                }
+            }
+            return true;
+        }
     }
 }
