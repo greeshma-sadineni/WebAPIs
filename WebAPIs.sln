@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIs", "WebAPIs\WebAPIs.csproj", "{9264DCEC-AFF0-4F2C-9733-F69C5DBBDFFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPIs", "WebAPIs\WebAPIs.csproj", "{9264DCEC-AFF0-4F2C-9733-F69C5DBBDFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor with WebApi", "Blazor with WebApi\Blazor with WebApi.csproj", "{2DC356E4-1509-4160-955F-D9AE38FD6EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor", "Blazor\Blazor.csproj", "{D563BB10-E6BB-4BE6-A081-7910CEBD2738}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9264DCEC-AFF0-4F2C-9733-F69C5DBBDFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9264DCEC-AFF0-4F2C-9733-F69C5DBBDFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9264DCEC-AFF0-4F2C-9733-F69C5DBBDFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC356E4-1509-4160-955F-D9AE38FD6EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC356E4-1509-4160-955F-D9AE38FD6EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC356E4-1509-4160-955F-D9AE38FD6EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC356E4-1509-4160-955F-D9AE38FD6EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D563BB10-E6BB-4BE6-A081-7910CEBD2738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D563BB10-E6BB-4BE6-A081-7910CEBD2738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D563BB10-E6BB-4BE6-A081-7910CEBD2738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D563BB10-E6BB-4BE6-A081-7910CEBD2738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
